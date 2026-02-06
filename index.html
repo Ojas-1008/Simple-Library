@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Devotional Library</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main-container">
+
+        <header class="title">Library</header>
+
+        <!-- Dashboard section: Displays statistical overview of the library -->
+        <section class="dashboard">
+            <h2>Statistics</h2>
+            <!-- Introduces the dashboard data -->
+            <div class="stats">
+                <!-- Groups all statistical items -->
+                <div class="stat-item">
+                    <!-- Total number of books in the library -->
+                    <span class="stat-label">Total Books</span>
+                    <span id="total-books" class="stat-value">0</span>
+                </div>
+                <div class="stat-item">
+                    <!-- Number of completed books -->
+                    <span class="stat-label">Completed</span>
+                    <span id="completed-books" class="stat-value">0</span>
+                </div>
+                <div class="stat-item">
+                    <!-- Number of pending books -->
+                    <span class="stat-label">Pending</span>
+                    <span id="pending-books" class="stat-value">0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Container for displaying the list of books -->
+        <section id="library">
+            <h2>Books</h2>
+        </section>
+
+        <!-- Allows users to add new books to the library -->
+        <form id="new-books">
+            <input type="text" placeholder="Enter Book Title" id="title">
+            <input type="text" placeholder="Enter Author's Name" id="author">
+            <input type="text" placeholder="Enter Status" id="status">
+            <input type="number" placeholder="Page Count" id="page-count">
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
